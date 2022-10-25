@@ -1,0 +1,186 @@
+@import url("../css/reset.css");
+@import url("../css/base.css");
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--branco);
+    background-image: url("/assets/imagens/cadastro/formatopo.png");    
+    background-position: left top;
+    background-repeat: no-repeat;
+    font-family: var(--fonte-padrao);
+    font-size: 16px;
+    color: var(--branco);
+    min-height: 100vh;
+}
+
+.cabeçalho {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.cabeçalho__logo {
+    display: none;
+}
+
+.cabeçalho__item {
+    padding: 2rem ;
+}
+
+.cabeçalho__imagem {
+    margin-left: 8rem;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.conteudo__descrição {
+    color: var(--azul);
+    padding: 4rem 0 1.5rem 0;
+    width: 60%;
+}
+
+.conteudo__perfil {
+    background-color: var(--cinza-claro-fundos);
+    width: 90%;
+    font-weight: 600;
+    color: var(--azul);
+    border: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.perfil__dados{
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.perfil__titulo {
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--cinza);
+}
+
+.perfil__imagem {
+    text-align: center;
+}
+
+
+.perfil__texto {
+    padding: 0.5rem 0 0.8rem 0;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--coral);
+
+}
+
+.formularios__input {
+    font-family: var(--fonte-padrao);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--cinza-claro);
+    background-color: var(--branco);
+    border: 1rem;
+    padding: 0.8rem 1rem;
+    margin: 0.8rem 0 0.8rem 0;
+    width: 95%;
+    box-shadow: 0px 2px 2px var(--shadow);
+    border-radius: 6px;    
+}
+
+.formularios__input::placeholder {
+    font-family: var(--fonte-padrao);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--cinza);
+}
+
+.formularios__enviar {
+    color: var(--branco);
+    font-family: var(--fonte-padrao);
+    font-weight: 600;
+    background-color: var(--coral);
+    padding: 0.6rem 1rem;
+    margin: 0.8rem 10rem 1.5rem 6rem;
+    width: 40%;
+    border: 1px solid var(--coral);
+    box-shadow: 0px 2px 2px var(--shadow);
+    border-radius: 6px; 
+}
+
+.rodapé { 
+    text-align: center;
+    background-color: var(--verde);
+    padding: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url("/assets/imagens/principal/formatopo2.png"), url("/assets/imagens/principal/formalado2.png");
+        background-position: left -5vw, 88vw 25vw;
+    }
+
+    .cabeçalho {
+        padding: 1.5rem;
+    }
+    
+    .cabeçalho__logo {
+        display: block;
+    }
+
+    .cabeçalho__imagem{
+        margin-left: 20rem;
+    }
+
+    .conteudo__descrição {
+        font-size: 18px;
+        padding: 8rem 0 4rem 0;
+        width: 70%;
+    }
+
+    .conteudo__perfil {
+        width: 80%;
+    }
+
+    .formularios__enviar {
+        margin-left: 15rem;
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+      background-image:url(../imagens/home/formatopo2.png), url(../imagens/home/formalado2.png);
+      background-position: left top, right center;
+    }
+
+    .cabeçalho {
+        margin-left: 3rem;
+    }
+
+    .cabeçalho__imagem {
+        margin-left: 70rem;
+    }
+    
+    .conteudo__descrição {
+        width: 30%;
+    }
+
+    .conteudo__perfil {
+        width: 30%;
+    }
+
+    .formularios__enviar {
+        margin-left: 13rem;
+    }
+    
+}    

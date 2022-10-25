@@ -1,0 +1,162 @@
+@import url("../css/base.css");
+@import url("../css/reset.css");
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--azul);
+    background-image: url(../imagens/home/formatopo.png), url(../imagens/home/formalado.png);
+    background-repeat: no-repeat;
+    background-position: left top, right;
+    font-family: var(--fonte-padrao);
+    font-size: 16px;
+    color: var(--branco);
+  }
+
+.cabeçalho {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
+.cabeçalho__logo {
+  display: none;
+}
+
+.cabeçalho__item {
+  padding: 2rem ;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.conteudo__imagem {
+  padding: 4.5rem 0 1.5rem 0; 
+}
+
+.conteudo__titulo {
+  font-family: var(--fonte-title);
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.conteudo__texto {
+  padding: 1rem 2rem;
+  margin: 1rem 2rem;
+  font-weight: 400;
+  width: 60vw;
+}
+
+.conteudo__texto2 {
+  display: none;
+}
+
+.conteudo__botão {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.botão {
+  background-color: var(--coral);
+  border: 1px solid var(--coral);
+  border-radius: 6px;
+  box-shadow: 1px 1px 3px var(--shadow);
+  margin: 0.5rem 0;
+  padding: 0.6rem 0;
+}
+
+.botão a {
+  font-family: var(--fonte-padrao);
+  font-weight: 600;
+  color: var(--branco);
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.conteudo__ilustração {
+  margin: 1rem 2.5rem -1.5rem 0;
+}
+
+
+.rodapé {
+  text-align: center;
+  background-color: var(--verde);
+  padding: 2.5rem;
+ 
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(../imagens/home/formatopo2.png), url(../imagens/home/formalado2.png);
+    background-position: left -3vw, 88vw 25vw;
+  }
+
+  .cabeçalho {
+    padding: 1.5rem;
+  }
+
+  .cabeçalho__logo {
+    display: block;
+  }
+  
+  .conteudo__imagem {
+    padding: 5rem 0 1.5rem 0; 
+  }
+
+  .conteudo__titulo {
+    font-size: 28px;
+  }
+
+  .conteudo__texto {
+    display: none;
+  }
+  
+  .conteudo__texto2 {
+    display: block;
+    padding: 1rem 2rem;
+    margin: 1rem 2rem;
+    font-size: 18px;
+    font-weight: 400;
+    width: 45vw;
+  }
+
+  .botão {
+    width: 45vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-image:url(../imagens/home/formatopo2.png), url(../imagens/home/formalado2.png);
+    background-position: left top, right center;
+  }
+
+  .cabeçalho {
+    margin-left: 3rem;
+  }
+  .conteudo__imagem {
+    width: 15vw;
+  }
+
+  .conteudo__texto2 {
+    width: 32vw;
+  }
+
+  .botão {
+    width: 25vw;
+  }
+
+  
+}
+
+
+

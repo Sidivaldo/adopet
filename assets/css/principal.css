@@ -1,0 +1,162 @@
+@import url("../css/reset.css");
+@import url("../css/base.css");
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--branco);
+    background-image: url("/assets/imagens/cadastro/formatopo.png");    
+    background-position: left top;
+    background-repeat: no-repeat;
+    font-family: var(--fonte-padrao);
+    font-size: 16px;
+    color: var(--branco);
+    min-height: 100vh;
+}
+
+.cabeçalho {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+  
+.cabeçalho__item {
+    padding: 2rem ;
+}
+
+.cabeçalho__imagem {
+    margin-left: 8rem;
+}
+
+.cabeçalho__logo {
+    display: none;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.conteudo__descrição {
+    color: var(--azul);
+    padding: 4rem 0 1.5rem 0;
+    width: 60%;
+}
+
+.conteudo__animais {
+    display: flex;
+    background-color: var(--cinza-claro-fundos);
+    padding: 1.5rem;
+    width: 85%;
+    margin: 0.5rem;
+}
+
+.conteudo__textos {
+    text-align: start;
+    padding: 0 0 0 1rem;
+    line-height: 20px;
+}
+
+.conteudo__titulo {
+    color: var(--azul);
+    font-weight: 600;
+}
+
+.conteudo__texto { 
+    color: var(--cinza);
+    margin: 0.5rem 0 1.8rem 0;
+}
+
+.conteudo__endereço {
+    font-size: 14px;
+    color: var(--cinza);
+}
+
+.conteudo__contato {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-family: var(--fonte-padrao);
+    font-size: 10px;
+    color: var(--cinza);
+    text-decoration: none;
+    padding-top: 0.3rem;
+}
+
+.conteudo__contato img {
+    padding-right: 0.5rem;
+
+}
+
+.rodapé { 
+    text-align: center;
+    background-color: var(--verde);
+    padding: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url("/assets/imagens/principal/formatopo2.png");
+        background-position: left -5vw;
+    }
+
+    .cabeçalho {
+        margin-left: 1rem;
+    }
+
+    .cabeçalho__item {
+        margin: 1rem;
+    }
+    
+    .cabeçalho__logo {
+        display: block;
+    }
+
+    .cabeçalho__imagem{
+        margin-left: 15rem;
+    }
+
+    .conteudo__descrição {
+        font-size: 18px;
+        padding: 8rem 0 1.5rem 0;
+    }
+
+    .conteudo__principal {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0.5rem 0 0.5rem 2rem;
+        width: 100%; 
+    }
+
+    .conteudo__animais {
+        width: 41%; 
+    }
+    
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+      background-image:url(../imagens/home/formatopo2.png), url(../imagens/home/formalado2.png);
+      background-position: left top, right center;
+    }
+
+    .cabeçalho {
+        margin-left: 3rem;
+    }
+
+    .cabeçalho__imagem {
+        margin-left: 55rem;
+    }
+
+    .conteudo__principal {
+        justify-content: center;
+    }
+
+    .conteudo__animais {
+        width: 25%; 
+    }
+}    
